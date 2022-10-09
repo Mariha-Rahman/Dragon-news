@@ -1,15 +1,15 @@
-
+import logo from './logo.svg';
 import './App.css';
-import Header from './Components/Header/Header';
-import Shop from './Components/Shop/Shop';
+import Header from './component/Header/Header';
+import Mealdb from './component/Mealdb/Mealdb';
+
+
 
 function App() {
   return (
-    <div >
-
+    <div className="App">
       <Header></Header>
-      <Shop></Shop>
-
+      <Mealdb></Mealdb>
     </div>
   );
 }
