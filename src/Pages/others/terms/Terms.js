@@ -5,7 +5,7 @@ const Terms = () => {
     return (
         <div>
             <h2>This are ours terms and conditions</h2>
-            <p>Copyright</p>
+            {/* <p>Copyright</p> */}
             <p>Go back <Link to='/register'>Register</Link></p>
         </div>
     );
