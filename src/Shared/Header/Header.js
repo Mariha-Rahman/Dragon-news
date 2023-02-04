@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import { Button, Image } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { ImUser } from 'react-icons/im';
+
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
 import LeftNav from '../LeftNav/LeftNav';
@@ -34,17 +34,19 @@ const Header = () => {
                                     user?.uid ?
                                         <>
                                             <p>{user?.displayName}</p>
+
                                             <Button variant="secondary" onClick={handleSignOut} className='ms-2 py-0'>Log out</Button>
                                         </>
 
                                         :
                                         <>
-                                            <Link to='/login'>LogIn</Link>
+                                            <Link className='me-2' to='/login'>LogIn</Link>
                                             <Link to='/register'>Register</Link>
                                         </>
                                 }
 
                             </div>
+
                         </Nav>
 
                         <div className='d-lg-none'>
