@@ -1,0 +1,10 @@
+.header a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+.text {
+    font-size: 30px;
+    color: orangered;
+}

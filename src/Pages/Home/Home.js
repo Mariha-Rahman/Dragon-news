@@ -1,20 +1,19 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import NewsSummeryCard from '../../Shared/NewsSummeryCard/NewsSummeryCard';
-
+import Place from '../Place/Place';
+import './Home.css'
 const Home = () => {
-    const Allnews = useLoaderData()
+    const places = useLoaderData()
     return (
-        <div>
-            <h2>Dragon news home: {Allnews.length}</h2>
-            {
-                Allnews.map(news => <NewsSummeryCard
-                    key={news._id}
-                    news={news}
-                ></NewsSummeryCard>)
-            }
 
+        <div className='d-flex'>
+
+            {places.map(place => <Place
+                key={place.id}
+                place={place}>
+            </Place>)}
         </div>
+
     );
 };
 
